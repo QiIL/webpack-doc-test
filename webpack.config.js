@@ -9,7 +9,7 @@ module.exports = {
   },
   devtool: 'inline-source-map',
   plugins: [
-    new CleanWebpackPlugin(['dist']),
+    // new CleanWebpackPlugin(['public']),
     new HtmlWebpackPlugin({
       title: 'Output Management'
     }),
@@ -17,10 +17,10 @@ module.exports = {
   ],
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'public')
   },
   devServer: {
-    contentBase: './dist',
+    contentBase: './public',
     hot: true
   },
   module: {

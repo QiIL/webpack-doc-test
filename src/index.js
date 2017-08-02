@@ -1,8 +1,8 @@
 import _ from 'lodash';
 import printMe from './print';
-import './asset/css/style.css';
+import '../public/asset/css/style.css';
 // the Icon is an src
-import Icon from './asset/img/icon.jpg'
+import Icon from '../public/asset/img/icon.jpg'
 
 if (module.hot) {
   module.hot.accept('./print.js', function () {
